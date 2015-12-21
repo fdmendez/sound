@@ -1018,7 +1018,7 @@ static int snd_byt_rt5640_mc_probe(struct platform_device *pdev)
 		if (byt_rt5640_quirk & BYT_RT5640_JACK_BP_CODEC)
 			drvdata->jack_bp_sel = JACK_BP_CODEC;
 		else
-			drvdata->jack_int_sel = JACK_BP_MICBIAS;
+			drvdata->jack_bp_sel = JACK_BP_MICBIAS;
 	}
 
 	/* register the soc card */
